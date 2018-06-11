@@ -28,10 +28,10 @@ class Song
   end 
   
   def self.genre_count
-    {}.tap {|h| h[@@genres.each { |genre, count| count[genre] += 1} 
+    {}.tap {|h| @@genres.each { |genre| h[genre] += 1} 
   end 
   
   def self.artist_count
-    @@artists.each_with_object { |artist, count| count[artist] += 1} 
+    {}.tap {|h| @@artists.each{ |artist| count[artist] += 1} 
   end
 end      
