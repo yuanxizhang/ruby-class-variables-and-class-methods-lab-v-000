@@ -33,6 +33,6 @@ class Song
   end 
   
   def self.artist_count
-    {}.tap {|h| @@artists.each{ |artist| h[artist] += 1}} 
+    {}.tap {|h| @@artists.each{ |artist| h[artist] ||=0 h[artist] += 1}} 
   end
 end      
