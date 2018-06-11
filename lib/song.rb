@@ -42,6 +42,6 @@ class Song
       h[artist] ||= 0 
       h[artist] += 1
     end
-    retrun h
+    return h
   end
 end      
