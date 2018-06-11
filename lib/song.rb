@@ -41,6 +41,7 @@ class Song
     @@artists.each do |artist| 
       h[artist] ||= 0 
       h[artist] += 1
-      
+    end
+    retrun h
   end
 end      
